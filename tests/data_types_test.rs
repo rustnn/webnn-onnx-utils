@@ -1,4 +1,4 @@
-use webnn_onnx_utils::data_types::{onnx_to_webnn, webnn_to_onnx, DataType};
+use webnn_onnx_utils::data_types::{DataType, onnx_to_webnn, webnn_to_onnx};
 
 #[test]
 fn round_trip_dtype_codes() {

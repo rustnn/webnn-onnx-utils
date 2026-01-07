@@ -2,12 +2,12 @@
 
 pub mod protos;
 
-pub mod error;
-pub mod data_types;
-pub mod operation_names;
 pub mod attributes;
-pub mod tensor_data;
+pub mod data_types;
+pub mod error;
 pub mod identifiers;
+pub mod operation_names;
 pub mod shape_inference;
+pub mod tensor_data;
 
 pub use error::{ConversionError, Result};
