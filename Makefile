@@ -161,3 +161,7 @@ msrv:
 .PHONY: ci
 ci: fmt-check clippy test
 
+
+.PHONY: lint
+lint:
+	$(CARGO) clippy $(PKGFLAG) $(FEATUREFLAG) $(CARGOFLAGS) -- -D warnings
