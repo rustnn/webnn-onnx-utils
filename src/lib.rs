@@ -6,8 +6,8 @@ pub mod attributes;
 pub mod data_types;
 pub mod error;
 pub mod identifiers;
-pub mod operation_names;
 pub mod onnx_shape;
+pub mod operation_names;
 pub mod shape_inference;
 pub mod tensor_data;
 

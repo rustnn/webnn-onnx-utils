@@ -3,11 +3,11 @@ use webnn_onnx_utils::tensor_data::TensorData;
 
 #[test]
 fn test_tensor_data_scalar_float32() {
-    let data = TensorData::scalar(DataType::Float32, 3.14);
+    let data = TensorData::scalar(DataType::Float32, std::f32::consts::PI);
     assert_eq!(data.len(), 1);
 
     match data {
-        TensorData::Float32(ref v) => assert_eq!(v[0], 3.14),
+        TensorData::Float32(ref v) => assert_eq!(v[0], std::f32::consts::PI),
         _ => panic!("Expected Float32 variant"),
     }
 }

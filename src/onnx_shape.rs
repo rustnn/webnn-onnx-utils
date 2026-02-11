@@ -1,7 +1,7 @@
-use crate::protos::onnx::tensor_shape_proto::{
-    dimension::Value as DimValue, Dimension as OnnxDimension,
-};
 use crate::protos::onnx::TensorShapeProto;
+use crate::protos::onnx::tensor_shape_proto::{
+    Dimension as OnnxDimension, dimension::Value as DimValue,
+};
 use crate::shape_inference::Dim;
 
 /// Convert a shape inference Dim into an ONNX Dimension.
