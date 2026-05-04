@@ -1,9 +1,26 @@
 [package]
 name = "webnn-onnx-utils"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
+rust-version = "1.85"
 license = "Apache-2.0"
 description = "Shared utilities for ONNX <-> WebNN conversion (types, op names, attrs, tensor data, etc.)"
+readme = "README.md"
+repository = "https://github.com/rustnn/webnn-onnx-utils"
+homepage = "https://github.com/rustnn/webnn-onnx-utils"
+documentation = "https://docs.rs/webnn-onnx-utils"
+keywords = ["onnx", "webnn", "tensor", "interop"]
+categories = ["api-bindings", "encoding", "science"]
+include = [
+    "/src",
+    "/tests",
+    "/protos",
+    "/build.rs",
+    "/Cargo.toml",
+    "/README.md",
+    "/LICENSE",
+    "/CHANGELOG.md",
+]
 
 [lib]
 path = "src/lib.rs"
